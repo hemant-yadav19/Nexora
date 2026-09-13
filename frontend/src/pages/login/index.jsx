@@ -14,7 +14,7 @@ export default function LoginConponent() {
   const [userLoginMethod,setUserLoginMethod] = useState(false);
   useEffect(() => {
     if (authState.loggedIn) {
-      router.push("/dashBoard");
+      router.push("/dashboard");
     }
   }, [authState.loggedIn, router]);
 
@@ -24,7 +24,7 @@ export default function LoginConponent() {
   
   useEffect(()=>{
     if(localStorage.getItem("token")){
-      router.push("/dashBoard");
+      router.push("/dashboard");
     }
   })
   const [email,setEmail] = useState();
