@@ -19,7 +19,7 @@ app.use(
     express.static(path.join(__dirname, "uploads"))
 );
 app.use(cors({
-    origin: "http://localhost:3000",
+    origin: "https://nexora-theta-woad.vercel.app",
     credentials: true
 }));
 
