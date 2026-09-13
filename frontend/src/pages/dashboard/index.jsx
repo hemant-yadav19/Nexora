@@ -8,7 +8,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import styles from "./index.module.css";
 import { BASE_URL } from '@/config';
 import { resetPostId } from '@/config/redux/reducer/postReducer';
-export default function dashBoard() {
+export default function dashboard() {
   const router = useRouter();
 
   const dispatch = useDispatch();
