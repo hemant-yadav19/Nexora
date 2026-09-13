@@ -24,7 +24,7 @@ export default function LoginConponent() {
   
   useEffect(()=>{
     if(localStorage.getItem("token")){
-      router.push("/dashboard");
+      router.push("/dashBoard");
     }
   })
   const [email,setEmail] = useState();
