@@ -19,7 +19,7 @@ app.use(
     express.static(path.join(__dirname, "uploads"))
 );
 app.use(cors({
-    origin: "https://nexora-theta-woad.vercel.app",
+    origin: "https://nexora-git-main-nexora-483a.vercel.app",
     credentials: true
 }));
 
