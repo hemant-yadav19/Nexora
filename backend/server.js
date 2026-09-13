@@ -18,10 +18,28 @@ app.use(
     "/uploads",
     express.static(path.join(__dirname, "uploads"))
 );
+
+const allowedOrigins = [
+    "https://nexora-theta-woad.vercel.app",
+    "https://nexora-git-main-nexora-483a.vercel.app",
+    "https://nexora-53ki11bsa-nexora-483a.vercel.app"
+];
+
 app.use(cors({
-    origin: "https://nexora-git-main-nexora-483a.vercel.app",
+    origin: function (origin, callback) {
+        if (!origin || allowedOrigins.includes(origin)) {
+            callback(null, true);
+        } else {
+            callback(new Error("Not allowed by CORS"));
+        }
+    },
     credentials: true
 }));
+// app.use(cors({
+//     origin: "https://nexora-git-main-nexora-483a.vercel.app",   
+//     https://nexora-53ki11bsa-nexora-483a.vercel.app/
+//     credentials: true
+// }));
 
 
 app.use(express.json());
