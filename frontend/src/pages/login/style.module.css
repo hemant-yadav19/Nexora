@@ -1,0 +1,97 @@
+
+.container{
+    display: flex;  
+    justify-content: center;
+    height: 90svh;
+    align-items: center;
+    background: snow  ;
+}
+
+.cardContainer{
+    height: 80vh;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 80vw;
+    background: white;
+    box-shadow: 10px 10px 15px rgb(173, 173, 173);
+}
+
+.cardContainer_left{
+    flex: 0.6;
+    padding: 2rem;
+    text-align: center;
+}
+
+.cardContainer_right{
+    flex: 0.4;
+    background: #393939;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}   
+
+    .cardLeft_heading{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+
+.input_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.3rem;
+    max-width: 400px;
+    margin: 0 auto;
+    gap: 1.5rem;
+}        
+
+
+.input_feild{
+    padding-inline: 2rem;
+    padding-block: 0.7rem;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid silver;
+    width: 100%;
+}   
+
+.input_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+.input_col {
+  display: flex;
+  flex-direction: column;   
+  gap: 1rem;
+    width: 100%;
+}
+
+    .buttonJoin{
+    cursor: pointer;
+    user-select: none;
+    text-decoration: none;
+    transition: all 0.2s;
+    font-size: 1.4rem;
+    padding-inline:0.8rem;
+    padding-block: 0.4rem;
+    color: white; 
+    background: rgb(44, 66, 147);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    
+    }
+
+
+
+
+

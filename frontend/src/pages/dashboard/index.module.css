@@ -1,0 +1,222 @@
+.scrollComponenet{
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+.userProfile{
+    height: 40px;
+    width: 40px;
+    border-radius:100%;
+}
+.createPostContainer{
+display: flex;
+height: 8svb;
+width: 100%;
+position: relative;
+padding-inline: 0.8rem;
+gap: 1.3rem;
+background: rgb(252, 245, 245);
+border-radius: 15px;
+max-width: 90%;
+align-items: center;
+margin-left: 2rem;
+}
+
+.uploadContent{
+   position: absolute;
+   right: 0;
+   bottom: -80%;
+   background: grey;
+    border-radius: 10px;
+    padding-inline: 1.2rem;
+    padding-block: 0.5rem;
+    cursor: pointer;
+}
+/* .createPostContainer>textarea{ */
+    /* width: 100%; */
+    /* align-items: center; */
+/* } */
+.fab{
+   background: rgb(64, 115, 171);
+   border-radius: 100%;
+}   
+.fab>svg{
+    height: 35px;   
+    width: 40px;
+    cursor: pointer;
+    color: white;
+}
+
+.label{
+    display: flex;
+    align-items: center;
+    gap:0.1rem;
+}
+
+.textareaContent{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid silver;
+    padding-inline:1.5rem;
+    padding-block:0.4rem;
+    outline: none;
+    /* text-align: center; */
+    /* max-width: 70%; */
+
+}
+
+.singleCard{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 1px solid grey;
+    
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    /* justify-content: center; */
+    /* max-width: 100%; */
+}
+
+.singleCardProfileContainer{
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.singleCardProfileContainer>img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.singleCard_image{
+    /* display: flex;
+    justify-content: center; */
+
+    width: 100%;
+    padding-top: 0.6rem;
+    height: fit-content;
+    overflow: hidden;
+    }
+
+.singleCard_image>img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+    }
+
+
+ .optionContainer{
+    display: flex;
+    /* align-items: center; */
+    width: 100%;
+    justify-content: space-between;
+    padding-block: 0.8rem;
+    /* border: 1px solid silver; */
+}
+
+.singleOption_optionsContainer{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    cursor: pointer;
+}
+.singleOption_optionsContainer>svg{
+    width: 10%;
+    height: 100%;    
+    min-width: 1rem;
+}
+
+.commentsContainer{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.allCommentContainer{
+    width: 40vw;
+    height: 80vh;
+    background: white;
+    border-radius: 10px;
+    position: relative;
+    padding: 1.4rem;
+    
+
+}
+
+.allPostsComments{
+    gap: 8rem;
+}
+
+.postCommentContainer{
+    position: absolute;
+    bottom: 1.2rem;
+    left: 1.2rem;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.postCommentContainer>input{
+    /* height: 50px;
+    width: 100%; */
+    flex: 0.9;
+    padding-block: 1rem;
+    border-radius: 15px;
+    border: none;
+    background: rgb(238, 238, 238);
+}
+.postCommentContainer>input:focus{
+    outline: 1px solid silver;
+}
+.postCommentContainer_commentBtn{
+    flex: 0.1;
+    color:white;
+    width: fit-content;
+    background: rgb(41, 41, 152);
+    padding-block: 1rem;
+    padding-inline: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.singleComment{
+ 
+}
+.singleComment_profilePicture{
+ 
+}
+.singleComment_profilePicture>img{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+}
+
+.commentContainer{
+
+}
+
+
+
+@media screen and (max-width:600px){
+    .allCommentContainer{
+        width: 80%;
+    }
+}

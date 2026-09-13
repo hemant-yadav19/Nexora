@@ -1,0 +1,30 @@
+.allProfilesContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 80%;
+}
+.allProfiles{
+    display: flex;
+    padding-inline: 1rem;
+    padding-block: 1rem;
+    border-radius: 10px;
+    width: 100%;
+    border: none;
+    gap: 1rem;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.allProfiles>img{
+    height: 50px;
+    width: 50px;
+    border-radius:100%;
+}
+
+.profileInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    
+}
