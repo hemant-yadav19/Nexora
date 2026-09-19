@@ -16,6 +16,7 @@
     gap: 1.2rem;
     align-items: center;
     border-right: 1px solid rgb(208, 208, 208);
+    
 }
 .sideBarOption{
     display: flex;
@@ -24,13 +25,16 @@
     gap: 1.2rem;
     width: 80%;
     max-width: 80%;
+    /* width: fit-content; */
     margin: 0 auto;
     cursor: pointer;
     transition: all 0.8ms;
+   
 }
 
 .sideBarOption > svg{
     height: 1.4rem;
+     width: fit-content;
 }
 
 .sideBarOption:hover{

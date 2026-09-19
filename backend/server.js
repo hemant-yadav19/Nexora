@@ -20,7 +20,7 @@ app.use(
 );
 
 const allowedOrigins = [
-    "https://nexora-theta-woad.vercel.app",
+    // "https://nexora-theta-woad.vercel.app",
     "https://nexora-git-main-nexora-483a.vercel.app",
     "https://nexora-53ki11bsa-nexora-483a.vercel.app"
 ];
@@ -36,8 +36,8 @@ app.use(cors({
     credentials: true
 }));
 // app.use(cors({
-//     origin: "https://nexora-git-main-nexora-483a.vercel.app",   
-//     https://nexora-53ki11bsa-nexora-483a.vercel.app/
+//     origin: "https://localhost:3000",
+   
 //     credentials: true
 // }));
 

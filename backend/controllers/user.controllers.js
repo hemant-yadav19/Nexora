@@ -172,7 +172,7 @@ export const getUserProfile = async (req,res) =>{
     try{
         // const {token}=req.body;
         const token = req.query.token;
-        // console.log(token);
+        console.log(token);
         const user = await User.findOne({token:token});
         // console.log(user);
         if(!user){

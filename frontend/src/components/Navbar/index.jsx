@@ -10,7 +10,7 @@ export function NavbarComponent() {
   return (
     <div className={styles.container}>
         <nav className={styles.navBar}>
-            <h1 onClick={()=>router.push('/')} style={{cursor:"pointer"}}>pro connect</h1>
+            <h1 onClick={()=>router.push('/')} style={{cursor:"pointer"}}>Nexora</h1>
         <div className={styles.navBarOptionContainer}>
             {authState.profileFetched && <div>
               <div style={{display:"flex",gap:"1.2rem"}}>
